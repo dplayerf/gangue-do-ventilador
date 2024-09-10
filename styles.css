@@ -4,7 +4,7 @@
 /* Estiliza o corpo da página */
 body {
     font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
-    background-color: #303535DD; /* Cor de fundo da página */
+    background-color: #111111dd; /* Cor de fundo da página */
     display: flex; /* Usa Flexbox para layout */
     flex-direction: column; /* Alinha os itens na vertical */
     align-items: center; /* Centraliza os itens horizontalmente */
@@ -20,6 +20,18 @@ h1 {
     color: #ffffff; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
     letter-spacing: 0.4rem; /* Espaçamento entre letras */
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 100px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+    margin-right: 20px;
 }
 
 /* Estiliza as seções da página */
@@ -103,14 +115,38 @@ section button:hover {
 
 /* Estiliza o rodapé da página */
 footer {
-    background-color: #F5F7F8; /* Cor de fundo do rodapé */
-    color: #45474B; /* Cor do texto */
+    background-color: #30475E; /* Cor de fundo do rodapé */
+    color: #fbfbfc; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
     padding: 0; /* Espaçamento interno */
     width: 100%; /* Largura total da página */
-    position: absolute; /* Posiciona o rodapé */
+    position: relative; /* Posiciona o rodapé */
     bottom: 0; /* Alinha ao fundo da página */
     font-size: 1rem; /* Tamanho da fonte */
+}
+
+.discord-button {
+    position: absolute;
+    bottom: 10px; /* Posiciona o botão na parte inferior */
+    right: 10px; /* Posiciona o botão à direita */
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-radius: 50%; /* Cria um círculo perfeito */
+    width: 40px; /* Ajuste o tamanho conforme necessário */
+    height: 40px;
+    margin: 0; /* Remove margens para garantir que o botão fique junto à borda */
+}
+
+.discord-logo {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px; /* Ajuste o tamanho conforme necessário */
+    height: 40px;
+    background: none;
+    border-radius: 50%;
 }
 
 @media (max-width: 768px) {
